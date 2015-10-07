@@ -1,0 +1,207 @@
+#use below commands in mongoshell
+
+use streaming_users_database
+db.streaming_users.insert(
+[
+   {
+     streaming_user_feed: 'feed1.ffm',
+     streaming_user_stream: 'live1.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed2.ffm',
+     streaming_user_stream: 'live2.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed3.ffm',
+     streaming_user_stream: 'live3.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed4.ffm',
+     streaming_user_stream: 'live4.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed5.ffm',
+     streaming_user_stream: 'live5.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed6.ffm',
+     streaming_user_stream: 'live6.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed7.ffm',
+     streaming_user_stream: 'live7.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed8.ffm',
+     streaming_user_stream: 'live8.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+   
+{
+     streaming_user_feed: 'feed9.ffm',
+     streaming_user_stream: 'live9.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed10.ffm',
+     streaming_user_stream: 'live10.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+},
+{
+     streaming_user_feed: 'feed11.ffm',
+     streaming_user_stream: 'live11.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed12.ffm',
+     streaming_user_stream: 'live12.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed13.ffm',
+     streaming_user_stream: 'live13.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed14.ffm',
+     streaming_user_stream: 'live14.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed15.ffm',
+     streaming_user_stream: 'live15.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed16.ffm',
+     streaming_user_stream: 'live16.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed17.ffm',
+     streaming_user_stream: 'live17.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed18.ffm',
+     streaming_user_stream: 'live18.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+   
+{
+     streaming_user_feed: 'feed19.ffm',
+     streaming_user_stream: 'live19.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed20.ffm',
+     streaming_user_stream: 'live20.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+},
+{
+     streaming_user_feed: 'feed21.ffm',
+     streaming_user_stream: 'live21.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed22.ffm',
+     streaming_user_stream: 'live22.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed23.ffm',
+     streaming_user_stream: 'live23.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed24.ffm',
+     streaming_user_stream: 'live24.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+   },
+{
+     streaming_user_feed: 'feed25.ffm',
+     streaming_user_stream: 'live25.webm',
+     streaming_user_format: 'webm',
+     streaming_user_allocated: 'N',
+     streaming_user_organizer_id: ' ',
+     streaming_user_event: ' '
+}])

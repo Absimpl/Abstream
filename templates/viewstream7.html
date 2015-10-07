@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+<script src="../static/js/jquery-1.11.2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right"> 
+            <li role="presentation" ><a href="/">Home</a></li>           
+            <li role="presentation" ><a href="/logout">Logout</a></li>
+            <li role="presentation" class="active"><a href="/list_streams">Refresh</a></li>
+          </ul>
+        </nav>  
+        <h3 style="color:blue;">Welcome {{user}}</h3>       
+      </div>
+
+<div class="jumbotron">
+     <h1>Abstream App</h1>
+     <div id="test"></div>
+</div>
+
+<footer class="footer">
+        <p>&copy; Company 2015</p>
+</footer>
+</div>
+
+<script>
+
+function myFunc($target_div) {
+    var stream1 = '{{streamdata}}'; 
+    var arr4 = stream1.split(',');       
+    var buttons = [];
+    for (var i = 0; i < arr4.length; i++){
+       var object = arr4[i];       
+       var str1 = object.split('add#on');        
+       var str6 = str1[0];
+       var str7 = str1[1];                        
+       
+       buttons.push($('<p> <input type ="button" data-id="' + str7 + '" class="button" value="EVENT NAME: ' + str6 +'" ></p>'));
+    } 
+    
+    $target_div.append(buttons);
+
+    var doButtonPress = function() {
+        var str5 = 'http://yourhost:your port/' + $(this).data('id');
+        window.open(str5 ,'_blank');        
+     }
+
+    $(".button").click(doButtonPress);
+}
+
+myFunc($("#test"));
+
+</script>
+</body>
+</html> 

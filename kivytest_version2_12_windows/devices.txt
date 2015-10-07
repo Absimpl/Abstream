@@ -1,0 +1,24 @@
+ffmpeg version N-75573-g1d0487f Copyright (c) 2000-2015 the FFmpeg developers
+  built with gcc 4.9.3 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libdcadec --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-lzma --enable-decklink --enable-zlib
+  libavutil      55.  2.100 / 55.  2.100
+  libavcodec     57.  3.100 / 57.  3.100
+  libavformat    57.  2.100 / 57.  2.100
+  libavdevice    57.  0.100 / 57.  0.100
+  libavfilter     6.  9.100 /  6.  9.100
+  libswscale      4.  0.100 /  4.  0.100
+  libswresample   2.  0.100 /  2.  0.100
+  libpostproc    54.  0.100 / 54.  0.100
+[dshow @ 0000004f9e2984a0] DirectShow video devices (some may be both video and audio devices)
+[dshow @ 0000004f9e2984a0]  "CyberLink Webcam Splitter"
+[dshow @ 0000004f9e2984a0]     Alternative name "@device_pnp_\\?\root#media#0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global"
+[dshow @ 0000004f9e2984a0]  "HP Truevision HD"
+[dshow @ 0000004f9e2984a0]     Alternative name "@device_pnp_\\?\usb#vid_0bda&pid_57c4&mi_00#6&aed8c4c&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global"
+[dshow @ 0000004f9e2984a0]  "USB2.0 Camera"
+[dshow @ 0000004f9e2984a0]     Alternative name "@device_pnp_\\?\usb#vid_1e4e&pid_0110&mi_00#6&1f3632cf&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global"
+[dshow @ 0000004f9e2984a0] DirectShow audio devices
+[dshow @ 0000004f9e2984a0]  "Microphone (Realtek High Definition Audio)"
+[dshow @ 0000004f9e2984a0]     Alternative name "@device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{75DFA054-829F-4123-A8B5-1FB44B427500}"
+[dshow @ 0000004f9e2984a0]  "Stereo Mix (Realtek High Definition Audio)"
+[dshow @ 0000004f9e2984a0]     Alternative name "@device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{46324960-CA4F-466D-AD40-70047B061FF5}"
+dummy: Immediate exit requested

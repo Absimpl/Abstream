@@ -1,0 +1,2 @@
+kivytest_version2_12
+python stopstream.py
