@@ -9,7 +9,7 @@ def Stop_Stream():
         process = fields[4]
         print 'pid' , pid
         print 'process' , process
-        if process.find(processname) >= 0              
+        if process.find(processname) >= 0:             
         # Kill the Process. Change signal.SIGHUP to signal.SIGKILL if you like
             os.kill(int(pid), signal.SIGKILL)
 

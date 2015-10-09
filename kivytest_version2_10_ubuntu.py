@@ -40,16 +40,14 @@ def user_login():
             # All Good, let's call MongoDb
             _name = user.get()
             
-            client = MongoClient()
-            db = client.streaming_registered_users_database
-            streaming_registered_users = db.streaming_registered_users
-            streaming_registered_record = streaming_registered_users.find_one({"username": _name})            
-            global dict2
-            dict2 = str(json.dumps(streaming_registered_record["password"]))
-            
-            dict2 = re.sub('["]', '' , dict2)
-            
-            if check_password_hash(dict2, password.get()):
+            params = urllib.urlencode({'d_name': user.get(), 'd_password':   password.get()})
+            headers = {"Content-type": "application/x-www-form-urlencoded",
+                       "Accept": "text/plain"}
+            conn = httplib.HTTPConnection("128.199.240.79", 5000)    
+            conn.request("POST", "check_password", params, headers)
+            response = conn.getresponse()            
+            data = str(response.read())            
+            if data == 'CHECKED':
                 global username
                 global eventname
                 username = user.get()            
@@ -136,7 +134,7 @@ def connect_feed():
     params = urllib.urlencode({'organizer_id': username, 'event_name':   eventname})
     headers = {"Content-type": "application/x-www-form-urlencoded",
                   "Accept": "text/plain"}
-    conn = httplib.HTTPConnection("your host", your port)    
+    conn = httplib.HTTPConnection("128.199.240.79", 5000)    
     conn.request("POST", "request_feed", params, headers)
     response = conn.getresponse()    
     data = str(response.read())
@@ -145,7 +143,7 @@ def connect_feed():
     global feed_string
     feed_string1 = str(dict2)    
     feed_string = re.sub('["]', '' , feed_string1)    
-    output_stream = "http://your host:your port/" + feed_string    
+    output_stream = "http://128.199.240.79:8091/" + feed_string    
     p = subprocess.Popen(["ffmpeg", "-f", "v4l2", "-s", "640x480", "-r", "25", "-i", dev_select, "-f", "alsa", "-ac", "2", "-i", audio_select, output_stream], stdout=subprocess.PIPE)     
     
 def callback_Start_Stream(instance):    
@@ -166,7 +164,7 @@ def callback_Stop_Stream(instance):
     params = urllib.urlencode({'organizer_id':username, 'event_name':   eventname, 'stop_feed': feed_string})
     headers = {"Content-type": "application/x-www-form-urlencoded",
                   "Accept": "text/plain"}    
-    conn = httplib.HTTPConnection("your host", your port)
+    conn = httplib.HTTPConnection("128.199.240.79", 5000)
     conn.request("POST", "stop_stream", params, headers)
     response = conn.getresponse()          
                    
